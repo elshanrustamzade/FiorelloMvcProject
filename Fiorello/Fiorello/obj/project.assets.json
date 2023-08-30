@@ -7465,11 +7465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello.csproj",
+      "projectUniqueName": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj",
       "projectName": "Fiorello",
-      "projectPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello.csproj",
+      "projectPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj",
       "packagesPath": "C:\\Users\\elsha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\obj\\",
+      "outputPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
