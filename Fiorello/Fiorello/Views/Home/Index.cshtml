@@ -9,27 +9,29 @@
 
         <section id="slider">
             <div class="owl-carousel slider">
-                <div> <img src="~/img/h3-slider-background.jpg" alt=""> </div>
-                <div> <img src="~/img/h3-slider-background-2.jpg" alt=""> </div>
-                <div> <img src="~/img/h3-slider-background-3.jpg" alt=""> </div>
+               @foreach (SliderImage sliderImage in Model.SliderImages)
+            {
+                 <div> <img src="~/img/@sliderImage.Image" alt=""> </div>
+            }
+                
             </div>
             <div class="container context pl-lg-5 ml-lg-3">
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="text">
-                            <h1>Send <span>flowers</span> like</h1>
-                            <h1>you mean it</h1>
-                            <p class="text-black-50 d-none d-sm-block">Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will
-                                make it special cursus a sit amet mauris. </p>
+                           @Html.Raw(Model.SliderInfo.Title)
+                           
+                           @Html.Raw(Model.SliderInfo.Subtitle)
+                         
                         </div>
                         <div class="img">
-                            <img src="~/img/h2-sign-img.png" alt="">
+                            <img src="~/img/@Model.SliderInfo.Image" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+       
         <!-- SLIDER END -->
 
         <!-- PRODUCTS START -->
@@ -145,50 +147,21 @@
                     </div>
                 </div>
                 <div class="row pb-5">
-                    <div class="col-md-6 col-lg-3">
+                   @foreach (Expert ex in Model.Experts)
+                {
+                     <div class="col-md-6 col-lg-3">
                         <div class="item text-center">
                             <div class="img">
-                                <img src="~/img/h3-team-img-1.png" class="img-fluid rounded-circle" alt="">
+                                <img src="~/img/@ex.Image" class="img-fluid rounded-circle" alt="">
                             </div>
                             <div class="text mt-3">
-                                <h6>CRYSTAL BROOKS</h6>
-                                <p class="text-black-50">Florist</p>
+                                <h6>@ex.Name</h6>
+                                <p class="text-black-50">@ex.Position.Name</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="item text-center">
-                            <div class="img">
-                                <img src="~/img/h3-team-img-2.png" class="img-fluid rounded-circle" alt="">
-                            </div>
-                            <div class="text mt-3">
-                                <h6>SHIRLEY HARRIS</h6>
-                                <p class="text-black-50">Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="item text-center">
-                            <div class="img">
-                                <img src="~/img/h3-team-img-3.png" class="img-fluid rounded-circle" alt="">
-                            </div>
-                            <div class="text mt-3">
-                                <h6>BEVERLY CLARK</h6>
-                                <p class="text-black-50">Florist</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="item text-center">
-                            <div class="img">
-                                <img src="~/img/h3-team-img-4.png" class="img-fluid rounded-circle" alt="">
-                            </div>
-                            <div class="text mt-3">
-                                <h6>AMANDA WATKINS</h6>
-                                <p class="text-black-50">Florist</p>
-                            </div>
-                        </div>
-                    </div>
+                }
+                  
                     <div class="col-lg-3"></div>
                     <div class="col-lg-3"></div>
                     <div class="col-lg-3"></div>

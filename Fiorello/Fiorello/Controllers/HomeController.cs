@@ -17,7 +17,7 @@ namespace Fiorello.Controllers
         private readonly AppDbContext _db;
         public HomeController(AppDbContext db)
         {
-            _db= db;    
+            _db = db;
         }
 
         public async Task<IActionResult> Index()
@@ -26,6 +26,9 @@ namespace Fiorello.Controllers
             {
                 Products = await _db.Products.ToListAsync(),
                 Categories = await _db.Categories.ToListAsync(),
+                SliderImages = await _db.SliderImages.ToListAsync(),
+                SliderInfo = await _db.SliderInfo.FirstOrDefaultAsync(),
+                Experts = await _db.Experts.Include(x => x.Position).ToListAsync(),
             };
             return View(homeVM);
         }
@@ -35,6 +38,6 @@ namespace Fiorello.Controllers
             return View();
         }
 
-       
+
     }
 }

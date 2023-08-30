@@ -13,5 +13,8 @@ namespace Fiorello.DAL
         public DbSet<Category> Categories { get; set; }
         public DbSet<Expert> Experts { get; set; }
         public DbSet<Position> Positions { get; set; }
+        public DbSet<SliderImage> SliderImages { get; set; }
+        public DbSet<SliderInfo> SliderInfo { get; set; }
+
     }
 }
