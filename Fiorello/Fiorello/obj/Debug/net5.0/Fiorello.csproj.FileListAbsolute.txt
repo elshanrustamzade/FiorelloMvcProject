@@ -454,3 +454,7 @@ C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\refi
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Fiorello.pdb
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Fiorello.genruntimeconfig.cache
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\ref\Fiorello.dll
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
