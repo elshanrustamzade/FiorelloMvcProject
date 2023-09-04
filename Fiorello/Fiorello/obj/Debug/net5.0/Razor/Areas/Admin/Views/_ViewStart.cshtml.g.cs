@@ -33,8 +33,15 @@ using Fiorello.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\Areas\Admin\Views\_ViewImports.cshtml"
+using Fiorello.Helpers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"328d2e24b4019ca1ed5dc21c8e2986d30ce2c8845478f3a1b4840b75fe46db70", @"/Areas/Admin/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"25195f7d47dbf298e7dc542472e70aeeacb599c7afc26973fd58def4b0853d93", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"838e96c563be1ca04e4bc3452e6cf005a1d0d1765e998dc84711bf478d0724b1", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

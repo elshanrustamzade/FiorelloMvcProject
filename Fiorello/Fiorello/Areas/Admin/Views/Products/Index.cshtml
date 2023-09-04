@@ -13,6 +13,7 @@
                         <th class="text-dark font-weight-bold">Image</th>
                         <th class="text-dark font-weight-bold">Name</th>
                         <th class="text-dark font-weight-bold">Price</th>
+                        <th class="text-dark font-weight-bold">Category</th>
                         <th class="text-dark font-weight-bold">Status</th>
                         <th class="text-dark font-weight-bold" style="text-align:end">Actions</th>
                     </tr>
@@ -22,10 +23,11 @@
                     {
                         <tr>
                             <td>
-                                <img src="~/img/slider/@item.Image" style="height:110px;width:230px;object-fit:cover" />
+                                <img src="~/img/@item.Image" style="height:100px;width:100px;object-fit:cover" />
                             </td>
                             <td>@item.Name</td>
                             <td>@item.Price</td>
+                            <td>@item.Category.Name</td>
                             <td>
                                 @if (!item.IsDeactive)
                                 {

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Fiorello.Models
 {
@@ -10,8 +11,9 @@ namespace Fiorello.Models
         public int Price { get; set; }
         public Category Category { get; set; }
         public int CategoryId { get; set; }
-        [NotMapped]
         public bool IsDeactive { get; set; }
+        [NotMapped]
+        public IFormFile Photo { get; set; }
 
     }
 }
