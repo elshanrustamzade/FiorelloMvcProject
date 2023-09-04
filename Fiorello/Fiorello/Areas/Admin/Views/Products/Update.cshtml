@@ -3,7 +3,7 @@
 <div class="col-6">
     <div class="card shadow mb-4">
         <div class="card-header">
-            <strong class="card-title">Create Slider</strong>
+            <strong class="card-title">Update Slider</strong>
         </div>
         <div class="card-body">
 
@@ -32,7 +32,15 @@
                     <select class="form-control" name="catId">
                         @foreach (Category cat in ViewBag.Categories)
                         {
-                            <optionb value="@cat.Id"> @cat.Name </optionb>
+                            if (Model.CategoryId == cat.Id)
+                            {
+                                <option selected value="@cat.Id"> @cat.Name </option>
+                            }
+                            else
+                            {
+                                <option value="@cat.Id"> @cat.Name </option>
+                            }
+
                         }
 
                     </select>

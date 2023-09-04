@@ -461,3 +461,4 @@ C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razo
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Index.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Create.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Update.cshtml.g.cs
