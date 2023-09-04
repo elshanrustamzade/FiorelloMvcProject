@@ -1,4 +1,6 @@
-﻿namespace Fiorello.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Fiorello.Models
 {
     public class Product
     {
@@ -8,6 +10,8 @@
         public int Price { get; set; }
         public Category Category { get; set; }
         public int CategoryId { get; set; }
+        [NotMapped]
+        public bool IsDeactive { get; set; }
 
     }
 }
