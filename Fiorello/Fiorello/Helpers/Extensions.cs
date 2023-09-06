@@ -1,5 +1,5 @@
-﻿
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing.Constraints;
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -12,7 +12,7 @@ namespace Fiorello.Helpers
         {
             return file.ContentType.Contains("image/");
         }
-        public static bool IsOrder1Mb(this IFormFile file)
+        public static bool IsOrder1MB(this IFormFile file)
         {
             return file.Length / 1024 > 1024;
         }
@@ -25,7 +25,6 @@ namespace Fiorello.Helpers
                 await file.CopyToAsync(fileStream);
             }
             return filename;
-
         }
     }
 }

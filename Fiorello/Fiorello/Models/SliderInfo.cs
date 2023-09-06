@@ -10,9 +10,5 @@ namespace Fiorello.Models
         public string Subtitle { get; set; }
         public string Image { get; set; }
 
-        public static implicit operator List<object>(SliderInfo v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

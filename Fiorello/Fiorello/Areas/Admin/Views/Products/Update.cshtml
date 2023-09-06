@@ -30,15 +30,15 @@
                 <div class="form-group">
                     <label>Select Category</label>
                     <select class="form-control" name="catId">
-                        @foreach (Category cat in ViewBag.Categories)
+                        @foreach (Category category in ViewBag.Categories)
                         {
-                            if (Model.CategoryId == cat.Id)
+                            if (Model.CategoryId == category.Id)
                             {
-                                <option selected value="@cat.Id"> @cat.Name </option>
+                                <option selected value="@category.Id"> @category.Name </option>
                             }
                             else
                             {
-                                <option value="@cat.Id"> @cat.Name </option>
+                                <option value="@category.Id"> @category.Name </option>
                             }
 
                         }

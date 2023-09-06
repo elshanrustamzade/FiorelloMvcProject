@@ -29,10 +29,11 @@
 
                 <div class="form-group">
                     <label>Select Category</label>
-                    <select class="form-control" name="catId">
-                        @foreach (Category cat in ViewBag.Categories)
+                    <select class="form-control" name="categoryId">
+
+                        @foreach (Category category in ViewBag.Categories)
                         {
-                            <optionb value="@cat.Id"> @cat.Name </optionb>
+                            <option value="@category.Id"> @category.Name </option>
                         }
 
                     </select>
