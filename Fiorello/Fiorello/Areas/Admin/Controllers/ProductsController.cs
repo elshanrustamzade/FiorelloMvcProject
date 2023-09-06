@@ -166,6 +166,30 @@ namespace Fiorello.Areas.Admin.Controllers
         }
         #endregion
 
+        #region Activity
+        public async Task<IActionResult> Activity(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Product dbProduct= await _db.Products.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbProduct == null)
+            {
+                return BadRequest();
+            }
+            if (!dbProduct.IsDeactive)
+            {
+                dbProduct.IsDeactive = true;
+            }
+            else
+            {
+                dbProduct.IsDeactive = false;
+            }
+            await _db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        #endregion
 
     }
 }
