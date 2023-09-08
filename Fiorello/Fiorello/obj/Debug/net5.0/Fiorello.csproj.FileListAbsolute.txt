@@ -442,7 +442,6 @@ C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razo
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Shop\Index.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Fiorello.RazorTargetAssemblyInfo.cache
@@ -463,3 +462,5 @@ C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razo
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Create.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Update.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Detail.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Products\Detail.cshtml.g.cs

@@ -14,6 +14,7 @@ namespace Fiorello.Models
         public bool IsDeactive { get; set; }
         [NotMapped]
         public IFormFile Photo { get; set; }
+        public ProductDetail ProductDetail { get; set; }
 
     }
 }
