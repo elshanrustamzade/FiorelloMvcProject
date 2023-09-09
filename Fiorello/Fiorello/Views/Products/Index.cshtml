@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row pt-5">
         </div>
-        <div class="row">
+        <div class="row" id="myProducts">
             @foreach (Product product in Model)
             {
                 <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
@@ -28,7 +28,16 @@
             }
 
         </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center my-3">
+                <a id="loadMore" class="btn btn-danger text-white">Load More</a>
+                <input type="hidden" value="@ViewBag.ProductsCount" />
+            </div>
+        </div>
     </div>
 </section>
 
+@section Scripts{
+    <script asp-append-version="true" src="~/js/loadMore.js"></script>
+}
 <!-- PRODUCTS END -->
