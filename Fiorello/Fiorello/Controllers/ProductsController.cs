@@ -18,7 +18,8 @@ namespace Fiorello.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            ViewBag.ProductsCount = await _db.Products.Where(x => !x.IsDeactive).CountAsync();
+            ViewBag.ProductsCount = await _db.Products.CountAsync(x => !x.IsDeactive);
+
             List<Product> products = await _db.Products.Where(x => !x.IsDeactive).OrderByDescending(x => x.Id).Take(8).ToListAsync();
             return View(products);
         }
@@ -32,15 +33,16 @@ namespace Fiorello.Controllers
             return View(product);
         }
 
-        public async Task<IActionResult> LoadMore(int skipCount)
+        public async Task<IActionResult> LoadMore(int skip)
         {
-            int count = await _db.Products.Where(x => !x.IsDeactive).CountAsync();
-            if (count <= skipCount)
+            int productsCount = await _db.Products.Where(x => !x.IsDeactive).CountAsync();
+
+            if (productsCount <= skip)
             {
-                return Content("Redd ol");
+                return Content("Get Out!");
             }
 
-            List<Product> products = await _db.Products.OrderByDescending(x => x.Id).Skip(skipCount).Take(8).ToListAsync();
+            List<Product> products = await _db.Products.OrderByDescending(x => x.Id).Skip(skip).Take(8).ToListAsync();
 
             return PartialView("_LoadMoreProductsPartial", products);
         }

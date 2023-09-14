@@ -4,6 +4,7 @@ using Fiorello.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,9 +22,12 @@ namespace Fiorello.Areas.Admin.Controllers
             _db = db;
             _env = env;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            List<Product> products = await _db.Products.Include(x => x.Category).OrderByDescending(x => x.Id).ToListAsync();
+            int take = 3;
+            ViewBag.PageCount = Math.Ceiling((decimal)(await _db.Products.CountAsync()) / take);
+           
+            List<Product> products = await _db.Products.Include(x => x.Category).OrderByDescending(x => x.Id).Skip((page-1)*3).Take(take).ToListAsync();
             return View(products);
         }
 
@@ -173,7 +177,7 @@ namespace Fiorello.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Product dbProduct= await _db.Products.FirstOrDefaultAsync(x => x.Id == id);
+            Product dbProduct = await _db.Products.FirstOrDefaultAsync(x => x.Id == id);
             if (dbProduct == null)
             {
                 return BadRequest();
