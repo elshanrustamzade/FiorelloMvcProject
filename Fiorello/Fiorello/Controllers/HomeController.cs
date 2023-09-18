@@ -24,7 +24,7 @@ namespace Fiorello.Controllers
         {
             HomeVM homeVM = new HomeVM
             {
-                Products = await _db.Products.Where(x => !x.IsDeactive).ToListAsync(),
+                Products = await _db.Products.Where(x => !x.IsDeactive).Take(8).ToListAsync(),
                 Categories = await _db.Categories.ToListAsync(),
                 SliderImages = await _db.SliderImages.ToListAsync(),
                 SliderInfo = await _db.SliderInfo.FirstOrDefaultAsync(),

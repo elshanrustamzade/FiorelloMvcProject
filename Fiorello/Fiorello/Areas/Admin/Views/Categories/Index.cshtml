@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Categories";
+}
+
+
+@model List<Category>
+
+<div class="col-md-12 my-4">
+    <div class="card shadow">
+        <div class="card-body">
+            <div class="d-flex justify-content-between">
+                <h5 class="card-title">Categories</h5>
+                <a class="btn btn-primary text-white mb-3" asp-action="Create">Create</a>
+            </div>
+            <table class="table table-bordered table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th class="text-dark font-weight-bold">Name</th>
+                        <th class="text-dark font-weight-bold">Status</th>
+                        <th class="text-dark font-weight-bold" style="text-align:end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Category item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>
+                                @if (!item.IsDeactive)
+                                {
+                                    <span class="badge badge-pill badge-success text-white">Activ</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-pill badge-danger">Passiv</span>
+                                }
+                            </td>
+                            <td class="d-flex justify-content-end">
+                                <a class="btn btn-warning text-white mr-2" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                                <a class="btn btn-info text-white mr-2" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                                @if (item.IsDeactive)
+                                {
+                                    <a class="btn btn-success text-white mr-2" asp-action="Activity" asp-route-id="@item.Id" style="width:125px">Activited</a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-danger text-white mr-2" asp-action="Activity" asp-route-id="@item.Id" style="width:125px">DeActivited</a>
+                                }
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <nav aria-label="...">
+            <ul class="pagination">
+
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+
+                @for (int i = 1; i <= ViewBag.PageCount; i++)
+                {
+                    <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+                }
+
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+
+
+
+

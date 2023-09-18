@@ -465,3 +465,5 @@ C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razo
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Products\Detail.cshtml.g.cs
 C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Views\Shared\_LoadMoreProductsPartial.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Categories\Index.cshtml.g.cs
+C:\Users\elsha\OneDrive\Desktop\Fiorello\Fiorello\Fiorello\obj\Debug\net5.0\Razor\Areas\Admin\Views\Categories\Create.cshtml.g.cs
