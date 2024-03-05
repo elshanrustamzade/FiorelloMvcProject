@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj": {}
+    "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj": {
+    "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj",
+        "projectUniqueName": "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj",
         "projectName": "Fiorello",
-        "projectPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj",
+        "projectPath": "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\Fiorello\\Fiorello\\Fiorello\\Fiorello.csproj",
         "packagesPath": "C:\\Users\\elsha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elsha\\OneDrive\\Desktop\\Fiorello\\Fiorello\\Fiorello\\obj\\",
+        "outputPath": "C:\\Users\\elsha\\OneDrive\\Documents\\Backend Projects\\Backend\\Fiorello\\Fiorello\\Fiorello\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace Fiorello.Controllers
@@ -22,9 +24,9 @@ namespace Fiorello.Controllers
 
         public async Task<IActionResult> Index()
         {
-            HomeVM homeVM = new HomeVM
+            HomeVM homeVM = new()
             {
-                Products = await _db.Products.Where(x => !x.IsDeactive).Take(8).ToListAsync(),
+                Products = await _db.Products.Where(x => !x.IsDeactive).Take(12).ToListAsync(),
                 Categories = await _db.Categories.ToListAsync(),
                 SliderImages = await _db.SliderImages.ToListAsync(),
                 SliderInfo = await _db.SliderInfo.FirstOrDefaultAsync(),
